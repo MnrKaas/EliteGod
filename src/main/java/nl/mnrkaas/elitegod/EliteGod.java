@@ -26,13 +26,11 @@ public final class EliteGod extends JavaPlugin implements Listener {
         getCommand("god").setExecutor(new GodCommand());
         Bukkit.getLogger().info("[EliteGod] Loading Commands... (2/2)");
         getCommand("elitegod").setExecutor(new EliteGodCommand());
-        Bukkit.getLogger().info("[EliteGod] Commands Loaded (2)");
 
         Bukkit.getLogger().info("[EliteGod] Loading Permissions... (1/2)");
         pm.addPermission(new Permission("elitegod.toggle"));
         Bukkit.getLogger().info("[EliteGod] Loading Permissions... (2/2)");
         pm.addPermission(new Permission("elitegod.admin"));
-        Bukkit.getLogger().info("[EliteGod] Permissions Loaded (2)");
 
         Bukkit.getLogger().info("[EliteGod] Loading Configuration File... (language.yml)");
         Configuration.LangSetup();
@@ -47,7 +45,6 @@ public final class EliteGod extends JavaPlugin implements Listener {
         Bukkit.getLogger().info("[EliteGod] Loading bStats...");
         int pluginId = 22415;
         Metrics metrics = new Metrics(this, pluginId);
-        Bukkit.getLogger().info("[EliteGod] Loaded bStats");
 
         (new UpdateListener(this, 117634)).getLatestVersion(version -> {
             if (!getDescription().getVersion().equalsIgnoreCase(version)) {
@@ -56,7 +53,7 @@ public final class EliteGod extends JavaPlugin implements Listener {
 
         });
 
-        Bukkit.getLogger().info("[EliteGod] Plugin Enabled");
+        Bukkit.getLogger().info("[EliteGod] Plugin has been Enabled");
 
     }
 
