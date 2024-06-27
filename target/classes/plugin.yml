@@ -1,0 +1,19 @@
+name: EliteGod
+version: '1.0.1'
+main: nl.mnrkaas.elitegod.EliteGod
+api-version: '1.16'
+prefix: SimpleGod
+authors: [MnrKaas]
+load: STARTUP
+description: Just a simple god mode plugin.
+commands:
+  god:
+    description: Toggle God mode on/off
+    usage: /<command>
+  elitegod:
+    description: The main EliteGod command
+    usage: /<command> [help, reload]
+    aliases:
+      - eliteg
+      - egod
+      - eg
